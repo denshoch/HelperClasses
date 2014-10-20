@@ -1,0 +1,21 @@
+{
+  "name": "helper-classes",
+  "version": "0.0.0",
+  "authors": [
+    "lostandfound <info@denshochan.com>"
+  ],
+  "description": "CSS helper classes.",
+  "main": "styles.css",
+  "keywords": [
+    "css"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

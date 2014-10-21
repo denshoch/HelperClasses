@@ -1,0 +1,45 @@
+//
+// Mixins
+// --------------------------------------------------
+
+// Writing-modes
+// -------------------------
+@mixin writing-mode($horizontal-writing: true)
+{
+  @if $horizontal-writing {
+    -epub-writing-mode: horizontal-tb;
+    -ms-writing-mode: lr-tb;
+    writing-mode: horizontal-tb;
+  } @else {
+    -epub-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+  }
+}
+
+// Tate-Chu-Yoko
+// -------------------------
+@mixin tcy()
+{
+  -epub-text-combine: horizontal; /* EPUB 3.0 */
+  -epub-text-combine-horizontal: all; /* EPUB 3.0.1 */
+  -ms-text-combine-horizontal: all; /* for IE 11 */
+  text-combine-horizontal: all; // http://www.w3.org/TR/2012/WD-css3-writing-modes-20121115/
+}
+
+// Upright character
+// -------------------------
+@mixin upright()
+{
+  -epub-text-orientation:   upright;
+  text-orientation:         upright;
+}
+
+// Sideways character
+// -------------------------
+@mixin sideways()
+{
+  -epub-text-orientation: rotate-right; /* EPUB 3.0 */
+  -epub-text-orientation: sideways; /* EPUB 3.0.1 */
+  text-orientation: sideways;
+}

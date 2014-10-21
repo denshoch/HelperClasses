@@ -2,12 +2,15 @@
   "name": "helper-classes",
   "version": "0.0.0",
   "authors": [
-    "lostandfound <info@denshochan.com>"
+    "lostandfound from Densho Channel <info@denshochan.com>"
   ],
   "description": "CSS helper classes.",
-  "main": "styles.css",
+  "main": [
+    "assets/stylesheets/helper-classes.scss"
+  ],
   "keywords": [
-    "css"
+    "css",
+    "sass"
   ],
   "license": "MIT",
   "private": true,
